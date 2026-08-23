@@ -5,10 +5,12 @@ function Login() {
     <div className="min-h-screen bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center px-4">
       <div className="w-full max-w-md bg-white rounded-2xl shadow-2xl p-8">
         <h1 className="text-3xl font-bold text-gray-800 text-center mb-2">
-          Welcome Back!
+          Welcome Bro!
         </h1>
 
-        <p className="text-gray-500 text-center mb-8">Login to your account</p>
+        <p className="text-gray-500 text-center mb-8">
+          Register your new account!
+        </p>
 
         <form className="space-y-5">
           {/* Email */}
@@ -42,17 +44,17 @@ function Login() {
             type="submit"
             className="w-full py-3 bg-indigo-600 text-white font-bold rounded-lg transition-all duration-300 hover:bg-indigo-700 hover:-translate-y-0.5 hover:shadow-lg"
           >
-            Login
+            Register
           </button>
         </form>
 
         <p className="text-center text-sm text-gray-500 mt-6">
           Don't have an account?{" "}
           <Link
-            to="/register"
+            to="/login"
             className="text-indigo-600 font-semibold hover:underline"
           >
-            Sign up
+            Sign in
           </Link>
         </p>
       </div>
