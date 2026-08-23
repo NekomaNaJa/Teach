@@ -1,4 +1,8 @@
+import { useNavigate } from "react-router-dom";
+
 function App() {
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center">
       <main className="text-center">
@@ -7,10 +11,10 @@ function App() {
         </h1>
 
         <button
-          type="button"
-          className="px-8 py-4 rounded-full bg-white text-indigo-600 text-xl font-bold shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl active:translate-y-0"
+          onClick={() => navigate("/login")}
+          className="inline-block px-8 py-4 rounded-full bg-white text-indigo-600 text-xl font-bold shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
         >
-          Login!
+          Click Me!
         </button>
       </main>
     </div>
